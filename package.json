@@ -1,0 +1,41 @@
+{
+  "name": "@shadow-software/agt-sdk",
+  "version": "0.0.0",
+  "description": "TypeScript SDK for the American Gun Trader Dealer API",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "echo \"no tests yet\" && exit 0"
+  },
+  "keywords": [
+    "american-gun-trader",
+    "agt",
+    "dealer-api",
+    "sdk"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shadow-software/agt-sdk.git"
+  },
+  "dependencies": {
+    "openapi-fetch": "^0.13.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
