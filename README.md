@@ -32,6 +32,13 @@
 npm install @shadow-software/agt-sdk
 ```
 
+If the scoped package is not yet on the public registry (npm org provisioning),
+install from the GitHub release tag:
+
+```bash
+npm install github:shadow-software/agt-sdk#v0.2.0
+```
+
 ## Usage
 
 ```ts
