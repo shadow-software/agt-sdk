@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/shadow-software/agt-sdk/releases/tag/v0.2.0"><img alt="release" src="https://img.shields.io/github/v/release/shadow-software/agt-sdk?style=flat-square&color=d9a441"></a>
+  <a href="https://github.com/shadow-software/agt-sdk/releases/tag/v0.2.1"><img alt="release" src="https://img.shields.io/github/v/release/shadow-software/agt-sdk?style=flat-square&color=d9a441"></a>
   <img alt="License" src="https://img.shields.io/badge/license-MIT-blue?style=flat-square">
   <a href="https://shadowsoftware.com/"><img alt="Shadow Software" src="https://img.shields.io/badge/by-Shadow%20Software-8a8a8a?style=flat-square"></a>
 </p>
@@ -29,8 +29,27 @@
 ## Install
 
 ```bash
-npm install github:shadow-software/agt-sdk#v0.2.0
+npm install github:shadow-software/agt-sdk#v0.2.1
 ```
+
+Git installs compile the TypeScript entry points through the package's `prepare`
+script. With npm 12, add the following entries to your project's `package.json`
+to permit the reviewed SDK commit's build script, then run `npm install
+--allow-git=root`:
+
+```json
+{
+  "dependencies": {
+    "@shadowgroup/agt-sdk": "github:shadow-software/agt-sdk#ea55214f96dc003cfbccb9ead6759d468897e20c"
+  },
+  "allowScripts": {
+    "github:shadow-software/agt-sdk#ea55214f96dc003cfbccb9ead6759d468897e20c": true
+  }
+}
+```
+
+This pins the 0.2.1 package implementation and grants no other dependency script
+permissions. See [npm's Git and script policy](https://docs.npmjs.com/cli/install/).
 
 When `@shadowgroup` is provisioned on the public npm registry:
 
