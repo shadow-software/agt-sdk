@@ -1,5 +1,5 @@
 <p align="center">
-  <img src=".github/assets/banner.svg" alt="@shadow-software/agt-sdk — by Shadow Software" width="880">
+  <img src=".github/assets/banner.svg" alt="@shadowgroup/agt-sdk — by Shadow Software" width="880">
 </p>
 
 <h1 align="center">AGT TypeScript SDK</h1>
@@ -11,13 +11,13 @@
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@shadow-software/agt-sdk"><img alt="npm" src="https://img.shields.io/npm/v/@shadow-software/agt-sdk?style=flat-square&color=d9a441"></a>
+  <a href="https://github.com/shadow-software/agt-sdk/releases/tag/v0.2.0"><img alt="release" src="https://img.shields.io/github/v/release/shadow-software/agt-sdk?style=flat-square&color=d9a441"></a>
   <img alt="License" src="https://img.shields.io/badge/license-MIT-blue?style=flat-square">
   <a href="https://shadowsoftware.com/"><img alt="Shadow Software" src="https://img.shields.io/badge/by-Shadow%20Software-8a8a8a?style=flat-square"></a>
 </p>
 
 <p align="center">
-  <b><a href="https://www.npmjs.com/package/@shadow-software/agt-sdk">npm →</a></b>
+  <b><a href="https://github.com/shadow-software/agt-sdk/releases/latest">Release →</a></b>
   &nbsp;·&nbsp;
   <a href="https://github.com/shadow-software/agt-php-sdk">PHP SDK</a>
   &nbsp;·&nbsp;
@@ -29,20 +29,19 @@
 ## Install
 
 ```bash
-npm install @shadow-software/agt-sdk
+npm install github:shadow-software/agt-sdk#v0.2.0
 ```
 
-If the scoped package is not yet on the public registry (npm org provisioning),
-install from the GitHub release tag:
+When `@shadowgroup` is provisioned on the public npm registry:
 
 ```bash
-npm install github:shadow-software/agt-sdk#v0.2.0
+npm install @shadowgroup/agt-sdk
 ```
 
 ## Usage
 
 ```ts
-import { createAgtDealerClient } from "@shadow-software/agt-sdk";
+import { createAgtDealerClient } from "@shadowgroup/agt-sdk";
 
 const client = createAgtDealerClient({
   apiKey: process.env.AGT_API_KEY!,
