@@ -1,5 +1,5 @@
 <p align="center">
-  <img src=".github/assets/banner.svg" alt="@shadowgroup/agt-sdk — by Shadow Software" width="880">
+  <img src=".github/assets/banner.svg" alt="@shadow-software/agt-sdk — by Shadow Software" width="880">
 </p>
 
 <h1 align="center">AGT TypeScript SDK</h1>
@@ -40,7 +40,7 @@ to permit the reviewed SDK commit's build script, then run `npm install
 ```json
 {
   "dependencies": {
-    "@shadowgroup/agt-sdk": "github:shadow-software/agt-sdk#ea55214f96dc003cfbccb9ead6759d468897e20c"
+    "@shadow-software/agt-sdk": "github:shadow-software/agt-sdk#ea55214f96dc003cfbccb9ead6759d468897e20c"
   },
   "allowScripts": {
     "github:shadow-software/agt-sdk#ea55214f96dc003cfbccb9ead6759d468897e20c": true
@@ -51,16 +51,16 @@ to permit the reviewed SDK commit's build script, then run `npm install
 This pins the 0.2.1 package implementation and grants no other dependency script
 permissions. See [npm's Git and script policy](https://docs.npmjs.com/cli/install/).
 
-When `@shadowgroup` is provisioned on the public npm registry:
+When `@shadow-software` is provisioned on the public npm registry:
 
 ```bash
-npm install @shadowgroup/agt-sdk
+npm install @shadow-software/agt-sdk
 ```
 
 ## Usage
 
 ```ts
-import { createAgtDealerClient } from "@shadowgroup/agt-sdk";
+import { createAgtDealerClient } from "@shadow-software/agt-sdk";
 
 const client = createAgtDealerClient({
   apiKey: process.env.AGT_API_KEY!,

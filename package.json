@@ -1,5 +1,5 @@
 {
-  "name": "@shadowgroup/agt-sdk",
+  "name": "@shadow-software/agt-sdk",
   "version": "0.2.1",
   "description": "TypeScript SDK for the American Gun Trader Dealer API",
   "type": "module",
