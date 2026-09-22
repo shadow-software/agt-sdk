@@ -49,6 +49,13 @@ const client = createAgtDealerClient({
 });
 ```
 
+### Official sandbox smoke testing
+
+Use the private `AGT_SANDBOX_API_KEY` for the official synthetic account when
+running SDK, plugin, or external-review smoke tests. Never commit that value;
+the platform reconciles the account hourly without rotating the key. See the
+[official sandbox guide](https://americanguntrader.com/docs/official-sandbox).
+
 `src/generated/` is regenerated from the OpenAPI spec — do not edit by hand.
 Releases are produced by
 [`shadow-software/sdk-release`](https://github.com/shadow-software/sdk-release).
