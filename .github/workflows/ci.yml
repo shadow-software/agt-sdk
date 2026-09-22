@@ -1,7 +1,6 @@
 # Push/PR gate — build + smoke tests before release dispatch lands.
 #
-# Self-hosted CI (optional):
-#   gh variable set CI_RUNNER '["self-hosted","ci"]' -R shadow-software/agt-sdk
+# Public repo: always GitHub-hosted (ubuntu-latest). Do NOT set CI_RUNNER.
 name: CI
 
 on:
@@ -10,10 +9,14 @@ on:
   pull_request:
     branches: [master]
 
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   test:
     name: Build & smoke test
-    runs-on: ${{ fromJSON(vars.CI_RUNNER || '["ubuntu-latest"]') }}
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
 
